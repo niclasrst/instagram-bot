@@ -7,12 +7,11 @@ const run = async () => {
 	
 	await bot.initPuppeteer().then(() => console.log('[+] Puppeteer successfully initialized.'));
 	await bot.openInstagram().then(() => console.log('[+] Successfully opened instagram.'));
-	await bot.gotoHashtag().then(() => console.log('[+] Successfully opened hashtag page.'));
+	await bot.gotoHashtag().then(() => console.log('[+] Successfully opened hashtag page.\n'));
 	await bot.unFollowUsers();
 	await bot.closeBrowser().then(() => console.log('[+] Browser closed successfully.'));
 	
 	const endTime = Date();
-
 	console.log(`\n[*] start: ${startTime} - end: ${endTime}`);
 }
 

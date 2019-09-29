@@ -35,7 +35,7 @@ class Bot {
 		let hashtags = shuffle(this.config.hashtags);
 
 		for (let i = 0; i < hashtags.length; i++) {
-			console.log(`[*] Current Hashtag: '#${hashtags[i]}'`);
+			console.log(`\n-------------------------\n[*] Current Hashtag: '#${hashtags[i]}'`);
 
 			await this.page.goto(`${this.config.base_url}/explore/tags/${hashtags[i]}/?hl=en`);
 			await this.likePostFollow(this.config.selectors.hashtags_base_class, this.page);

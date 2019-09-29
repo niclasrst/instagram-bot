@@ -23,6 +23,7 @@
   },
   "homepage": "https://github.com/niclasrst/instagram-bot#readme",
   "dependencies": {
+    "firebase": "^7.0.0",
     "firebase-admin": "8.3.0",
     "puppeteer": "1.19.0",
     "shuffle-array": "^1.0.1"
